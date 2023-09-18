@@ -505,6 +505,91 @@ h5{
 }
 
 
+#loja1{
+    height: 100vh;
+}
+
+#loja2, #loja3{
+    background-color: #202020;
+    height: 200vh;
+}
+#loja3{
+    background-color: #363535;
+}
+#loja1{
+    background-image: url(img/lady-602881_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.find{
+    color: white;
+    text-align: center;
+    padding-top: 20%;
+    letter-spacing: 3px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 38px;
+}
+.discover{
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin-top: 3%;
+    margin-left: 46%;
+    background-color: transparent;
+    border: 1px solid gold;
+    transition: 0.5s;
+}
+.discover:hover{
+    background-color:rgb(237, 206, 171) ;
+    color: black;
+}
+.about{
+    color: rgb(237, 206, 171);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 33px;
+    margin-left: 5%;
+    letter-spacing: 2px;
+    padding-top: 7%;
+}
+.aboutt{
+    color: rgb(237, 206, 171);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 33px;
+    margin-left: 5%;
+    letter-spacing: 2px;
+    padding-top: 7%;
+}
+.abo{
+    text-align: justify;
+    margin-left: 5%;
+    font-size: 22px;
+    margin-right: 15%;
+    color: white;
+    padding-top: 3%;
+
+}
+.abo1, .abo2, .abo3{
+        text-align: justify;
+        margin-left: 5%;
+        font-size: 22px;
+        margin-right: 15%;
+        color: white;
+        padding-top: 3%;
+    }
+
+.port{
+    background-color: rgb(39, 39, 38);
+    margin-left: 40px;
+    margin-top: 8%;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+}
 
 
 
@@ -512,15 +597,22 @@ h5{
 
 
 
-
-@media (max-width:1080px) {
+@media (min-width:900px) and (max-width:1080px) {
     *{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
         font-family: 'Poppins', sans-serif;
     }
+    #banner{
+        background-image: url(img/fundo.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        background-attachment: fixed;
+    }
     .buton{
+        border-radius: 10px;
         background-color: rgb(102, 102, 80);
         color: white;
         border: 0px;
@@ -552,7 +644,7 @@ h5{
     }
     .menu{
         height: 11vh;
-        width: 90%;
+        width: 100%;
         padding: 40px;
         position: fixed;
         top: 0;
@@ -579,7 +671,7 @@ h5{
         text-decoration: none;
         font-family: 'Montserrat', sans-serif;
         font-size: 25px;
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
     }
     header ul{
         list-style-type: none;
@@ -591,7 +683,7 @@ h5{
     }
     header .ai{
         font-size: 20px;
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
         text-decoration: none;
         text-transform: uppercase;
         letter-spacing: 2px;
@@ -603,7 +695,7 @@ h5{
         width: 100%;
     }
     header .ai{
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
         text-decoration: none;
         text-transform: uppercase;
         letter-spacing: 2px;
@@ -616,18 +708,18 @@ h5{
     }
     .escritas{
         padding-left: 8%;
-        padding-top: 20%;
+        padding-top: 40%;
     }
     .escritas h1{
         padding-top: 100px;
        margin: 0;
-        font-size: 50px;
+        font-size: 60px;
         font-family: 'Montserrat', sans-serif;
         letter-spacing: 5px;
         font-weight: 500;
     }  
     .escritas h2{
-        font-size: 34px;
+        font-size: 40px;
         margin-left:7%;
         padding-top: 20px;
         font-family: 'Montserrat', sans-serif;
@@ -636,6 +728,7 @@ h5{
         color: #776c6c;
     }
     #botao{
+        
         color: white;
         text-transform: uppercase;
         letter-spacing: 3px;
@@ -648,10 +741,7 @@ h5{
         transition: 0.5s;
     }
     #pi{
-        color: rgb(255, 255, 255);
-        font-size: 45px;
-        padding-left: 48%;
-        margin-top: 10%;
+        color: transparent;
     }
     #combinações{
         box-shadow: 0px 0px 40px 0px rgb(60, 58, 58);
@@ -757,7 +847,7 @@ h5{
         margin-left: -50%;
     }
     .nav-escolhas{
-        width: 60%;
+        width: 80%;
         background-color: rgb(50, 50, 39);
         height:36vh;
         position: relative;
@@ -771,7 +861,7 @@ h5{
     .nav-escolhas a{
        justify-content: center;
         letter-spacing: 2px;
-        margin-right: 10px;
+        margin-right: 18px;
         font-size: 20px;
         color: white;
         transition: 0.6s;
@@ -784,6 +874,15 @@ h5{
         list-style: none;
         display: flex;
         justify-content: center;
+    }
+    .img-prdt{
+        width: 260px;
+        height: 260px;
+    }
+    .duplo li{
+        transition: 0.2s;
+        padding-right: 10px;
+        border-radius: 5px;
     }
     .principal{
         position: absolute;
@@ -799,5 +898,38 @@ h5{
     .sub{
         font-size: 22px;
     }
+    .find{
+        color: white;
+        text-align: center;
+        padding-top: 60%;
+        letter-spacing: 3px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 38px;
+    }
+    #loja3{
+        background-color: #3f3f3f;
+        height: 120vh;
+    }
+    #loja2{
+        background-color: #202020;
+        height: 120vh;
+    }
+    .abo{
+        text-align: justify;
+        margin-left: 5%;
+        font-size: 22px;
+        margin-right: 5%;
+        color: white;
+        padding-top: 3%;
+    
+    }
+    .abo1, .abo2, .abo3{
+            text-align: justify;
+            margin-left: 5%;
+            font-size: 22px;
+            margin-right: 5%;
+            color: white;
+            padding-top: 3%;
+        }
 }
 
